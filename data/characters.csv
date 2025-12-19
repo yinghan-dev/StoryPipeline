@@ -1,0 +1,3 @@
+character_id,canonical_name,titles,age,profession,personality,country_id,notes
+c1,人物ID对应名字,可用称呼1;可用称呼2,整数年龄,职业,性格描述标签,country_id对应国家,可选备注
+c2,人物ID对应名字,可用称呼1;可用称呼2,整数年龄,职业,性格描述标签,country_id对应国家比如ct1,可选备注

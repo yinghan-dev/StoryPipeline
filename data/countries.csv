@@ -1,0 +1,3 @@
+country_id,name,regime,media_ecology,alignment,faction_id,notes
+ct1,国家ID对应名称,政治制度类型,媒体生态特征,国家立场或价值倾向,比如f1,可选备注或说明
+ct2,国家ID对应名称,政治制度类型,媒体生态特征,国家立场或价值倾向,faction_id对应阵营比如f1,可选备注或说明

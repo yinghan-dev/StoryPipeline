@@ -1,0 +1,4 @@
+event_id,chapter_id,order_in_chapter,year,month,location,characters,scene_type,plot_direction
+1,1,1,YYYY,MM,事件发生的主要地点,主要参与人物ID，多个用分号分隔,事件类型标签,事件对章节或故事推进的影响或结果
+2,1,2,YYYY,MM,事件发生的主要地点,主要参与人物ID，多个用分号分隔,事件类型标签,事件对章节或故事推进的影响或结果
+3,2,1,1999,3,事件发生的主要地点,c1;c2;c3,冲突（自己任意写）,c2死亡
