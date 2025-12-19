@@ -18,7 +18,7 @@ StoryPipeline 是一个 **数据驱动的小说生成工作流**，通过结构�
 -- 基于 FastAPI + uvicorn 提供流式生成接口，章节生成可随时中断或续写，支持高效迭代与本地保存。
 
 
-该项目是我作为非计算机专业学生的一次尝试，旨在更高效的完成小说创作，同时也能保证高度的自主性，目前只做了后端，希望有能力的大佬能给我这个项目封装完善，感兴趣的话欢迎💡fork和给个⭐star
+❗该项目是我作为非计算机专业学生的一次尝试，旨在更高效的完成小说创作，同时也能保证高度的自主性，目前只做了后端，希望有能力的大佬能给我这个项目封装完善，感兴趣的话欢迎💡fork和给个⭐star
 
 
 ## ⚙项目架构
@@ -58,7 +58,13 @@ pip install -r requirements.txt
 
 ### 3.更改各个csv文件
 参考项目/data文件夹
-建议顺序story_overview.md确定小说走向————timeline.csv确定阶段————chapters.csv确定章节内容————events.csv确定章节展开—————characters.csv确定人物————countries.csv/factions.csv确认国家/派系
+建议顺序如下：
+1. story_overview.md 确定小说走向
+2. timeline.csv 确定小说大的阶段
+3. chapters.csv 确定章节内容
+4. events.csv 确定章节展开
+5. characters.csv 确定人物
+6. countries.csv/factions.csv 确认国家/派系
 
 ### 4.启动FastAPI 服务
 ```bash
@@ -71,6 +77,13 @@ uvicorn main:app --reload
 127.0.0.1:8000/chapter_flow?chapter_number=1
 ```
 - 实时返回章节正文流，需要逐章生成
-- 生成结果保存到 data/ 文件夹
+- 生成结果保存到 chapters/ 文件夹
 
+### 6.后期修改
+可以在生成某章后修改storyline.md和chapter 序号.md文件，检查有无生成错误
+
+## 未来计划
+1. 加入逻辑检查程序
+2. 封装前端，做交互UI
+3. 加入embedding，支持文本库检索
 
