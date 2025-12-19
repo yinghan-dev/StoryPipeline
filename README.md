@@ -17,7 +17,12 @@ StoryPipeline 是一个 **数据驱动的小说生成工作流**，通过结构�
 - 流式生成与实时服务
 -- 基于 FastAPI + uvicorn 提供流式生成接口，章节生成可随时中断或续写，支持高效迭代与本地保存。
 
+```
+该项目是我作为非计算机专业学生的一次尝试，旨在更高效的完成小说创作，同时也能保证高度的自主性，目前只做了后端，希望有能力的大佬能给我这个项目封装完善，感兴趣的话欢迎fork和给个star
+```
+
 ## 项目架构
+```
 StoryPipeline/
 │
 ├─ storage/ # 文件存储模块
@@ -36,16 +41,24 @@ StoryPipeline/
 ├─ llm_client.py # AI 模型接口
 ├─ main.py # FastAPI 服务入口
 └─ README.md
+```
 
 ## 快速开始
 ### 1.安装依赖
+```bash
 pip install -r requirements.txt
+```
 
 ### 2.启动 FastAPI 服务
 ```bash
 uvicorn main:app --reload
+```
 
 ### 3.生成文本
+```
 127.0.0.1:8000/chapter_flow?chapter_number=1
+```
 - 实时返回章节正文流，需要逐章生成
 - 生成结果保存到 data/ 文件夹
+
+
